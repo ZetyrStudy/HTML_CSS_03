@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de HTML5 - Aula 2</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabelas de Formulários</h1>
+
+    <p>Tabelas sevem para 'tabular' dados.</p>
+
+    <!-- Define a tabela -->
+    <table>
+
+        <!-- Primeira linha -->
+        <tr>
+            <th>Título 1</th><!-- Primeira célula da primeira linha -->
+            <th>Título 2</th><!-- Segunda célula da primeira linha -->
+            <th>Este é o título 3 da terceira coluna</th><!-- Terceira célula da primeira linha -->
+        </tr>
+
+        <!-- Segunda linha -->
+        <tr>
+            <td>2/1</td><!-- Primeira célula da segunda linha -->
+            <td>2/2</td><!-- Segunda célula da segunda linha -->
+            <td>2/3</td><!-- Terceira célula da segunda linha -->
+        </tr>
+
+        <!-- Terceira linha -->
+        <tr>
+            <td>3/1</td>
+            <td>esta é a célula 3/2</td>
+            <td>3/3</td>
+        </tr>
+
+        <!-- Quarta linha -->
+        <tr>
+            <td>4/1</td>
+            <td>4/2</td>
+            <td>4/3</td>
+        </tr>
+
+    </table>
+
+    <!-- &nbsp; => Nom breakble space -->
+    &nbsp;
+    <hr>&nbsp;
+
+    &#9749;
+
+    <table>
+
+        <tr>
+            <th rowspan="2">Qtd.</th>
+            <th rowspan="2">Descrição</th>
+            <th colspan="2">Preço</th>
+        </tr>
+
+        <tr>
+            <th>Unitário</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Biscoito</td>
+            <td>2,00</td>
+            <td>6,00</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Pipoca</td>
+            <td>1,00</td>
+            <td>5,00</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Pirulito</td>
+            <td>0,20</td>
+            <td>1,60</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Total gasto</td>
+            <td>12,60</td>
+        </tr>
+
+    </table>
+
+    &nbsp;
+    <hr>&nbsp;
+
+    <form action="#" method="get">
+
+        <input type="text" name="usuario">
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+
+</html>

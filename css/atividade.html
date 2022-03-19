@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="post" id="form-user">
+
+        <table>
+            <tr>
+                <th>
+                    <label for="name">Nome:</label>
+                </th>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome:">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">Email:</label>
+                </th>
+                <td>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email:">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="birthday">Nascimento:</label>
+                </th>
+                <td>
+                    <input type="date" id="birthday" name="birthday" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="state">Estado:</label>
+                </th>
+                <td>
+                    <select id="state" name="state">
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="age">Idade:</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="age()" value="novo">Novo
+                    <input type="checkbox" name="age()" value="velho">Velho
+                    <input type="checkbox" name="age()" value="carrancudo">Carrancundo
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="genre">Sexo:</label>
+                </th>
+                <td>
+                    <input type="radio" name="genre" value="M">Masculino
+                    <input type="radio" name="genre" value="F">Feminino
+                    <input type="radio" name="genre" vlue="N">Não informar
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="adress">Endereço</label>
+                </th>
+                <td>
+                    <textarea name="endereço" id="adress" placeholder="Seu endereço aqui..."></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="reset" value="Resete">
+                    <input type="submit" value="Envie">
+                </th>
+            </tr>
+
+        </table>
+    </form>
+
+    <p id="demo"></p>
+
+
+</body>
+<script>
+    const loginForm = document.getElementById("form-user");
+    loginForm.onsubmit = handleSubmit;
+
+    function handleSubmit(e) {
+        let n = document.getElementById('form-user').elements['name'].value;
+        let em = document.getElementById('form-user').elements['email'].value;
+        let b = document.getElementById('form-user').elements['birthday'].value;
+        let s = document.getElementById('form-user').elements['state'].value;
+        let g = document.getElementById('form-user').elements['genre'].value;
+        let ad = document.getElementById('form-user').elements['adress'].value;
+        //let a = document.getElementById('form-user').elements['age'].value[0];   //quebra o codigo
+        console.log("Name: ",n,"\nEmail: ", em,"\nNascimento: ", b,"\nEstado: ", s,"\nSexo: ", g, "\nEndereço: ", ad, "\n Idade:", a);
+        return false
+    }
+
+
+</script>
+
+</html>

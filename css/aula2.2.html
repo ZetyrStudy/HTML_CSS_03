@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de HTML5 - Aula 2</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabelas de Formulários</h1>
+
+    <p>Formulários permitem interação do usuário com a página.</p>
+
+    <form action="aula2.2.html" method="post">
+
+        <input type="text" name="user"><!-- Texto em uma linha -->
+        <input type="email" name="email"><!-- Texto tipo endereço de e-mail -->
+        <input type="submit" value="Send"><!-- Botão de envio do form -->
+
+    </form>
+
+    &nbsp;
+    <hr>
+    <hr>&nbsp;
+
+    <form method="get" name="form2">
+
+        <input type="button" value="Click" onclick="location.href='https://google.com'">
+        <hr>
+        <!-- Para se relacionarem corretamente, campos 'checkbox' devem seu arrays -->
+        <input type="checkbox" name="time[]" value="Flamengo"> Flamengo<br>
+        <input type="checkbox" name="time[]" value="Vasco"> Vasco<br>
+        <input type="checkbox" name="time[]" value="Campo Grande"> Campo Grande
+        <hr>
+        <input type="color" name="cor_preferida"> Selecione uma cor.
+        <hr>
+        <label><input type="date" name="data"> Selecione a data</label>
+        <hr>
+        <input type="password" name="senha"> Digite a senha
+
+        <hr>
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        <input type="radio" name="sexo" vlue="N">Não informar<br>
+
+        <hr>
+        <input type="submit" value="Vai logo">
+
+        <hr>
+        <label for="txt">Texto grande</label>
+        <textarea name="texto_grande" id="txt"></textarea>
+
+        <hr>
+        <select name="bairro">
+            <option value="Botafogo">Botafogo</option>
+            <option value="Flamengo">Flamengo</option>
+            <option value="Copa">Copacabana</option>
+        </select>
+
+    </form>
+
+</body>
+
+</html>
